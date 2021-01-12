@@ -4,6 +4,11 @@
     left: auto;
 }
 .mat-card-cont{
-    width: 50%;
-    margin: auto;
+    width: 25%;
+}
+.position{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
