@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'template';
+  opened: boolean = true;
+
+  triggerDrawer(){
+    this.opened = !this.opened;
+  }
+
 }
