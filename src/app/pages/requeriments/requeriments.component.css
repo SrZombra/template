@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+}
+.card{
+  width: 100%;
+}
+:host{
+  display: block;
+  width: 80%;
+  height: 100%;
+}

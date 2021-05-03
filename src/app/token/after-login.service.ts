@@ -22,7 +22,7 @@ export class AfterLoginService {
 
     // Retain the attempted URL for redirection
     // this.authService.redirectUrl = url;
-    this.router.navigate(['/login']);
+    this.router.navigate(['/requeriments']);
     return false;
 
   }

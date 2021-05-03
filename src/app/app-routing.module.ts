@@ -4,9 +4,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AfterLoginService } from './token/after-login.service';
 import { BerforeLoginService } from './token/before-login.service';
+import { RequerimentsComponent } from './pages/requeriments/requeriments.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent, canActivate: [BerforeLoginService] },
+  { path: 'requeriments', component: RequerimentsComponent, canActivate: [BerforeLoginService] },
   { path: '', component: HomeComponent, canActivate: [AfterLoginService] },
 ];
 
