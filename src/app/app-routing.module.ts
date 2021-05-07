@@ -8,7 +8,7 @@ import { RequerimentsComponent } from './pages/requeriments/requeriments.compone
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent, canActivate: [BerforeLoginService] },
-  { path: 'requeriments', component: RequerimentsComponent, canActivate: [BerforeLoginService] },
+  { path: 'requeriments', component: RequerimentsComponent, canActivate: [AfterLoginService] },
   { path: '', component: HomeComponent, canActivate: [AfterLoginService] },
 ];
 

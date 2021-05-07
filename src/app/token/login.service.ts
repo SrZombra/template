@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BaseUrl } from '../base-url';
+import { environment } from 'src/environments/environment';
 import { User } from 'src/app/models/user.model';
 
 @Injectable({
@@ -8,13 +8,14 @@ import { User } from 'src/app/models/user.model';
 })
 export class LoginService {
 
+  APIEndPoint = environment.APIEndPoint
+
   constructor(
-    private baseUrl: BaseUrl,
     private http: HttpClient
   ) { }
 
   login(data: User){
-    return this.http.post(`${this.baseUrl.url}/NEUgbYOtO8DvjfEmfXHu`, data);
+    return this.http.post(`${this.APIEndPoint}/login`, data);
   }
 
 }

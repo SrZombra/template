@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
 
   handleResponse(data): void {
     this.SwalService.closeSwal();
-    this.Token.handle(data.token);
+    this.Token.handle(data.data.token);
     this.Auth.changeAuthStatus(true);
     this.router.navigateByUrl('/');
   }

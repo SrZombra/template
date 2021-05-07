@@ -16,7 +16,6 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { NavBarComponent } from './pages/nav-bar/nav-bar.component';
 import { SidenavComponent } from './pages/sidenav/sidenav.component';
 import { LoginComponent } from './pages/login/login.component';
-import { BaseUrl } from './base-url';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
 import { HomeComponent } from './pages/home/home.component';
@@ -44,8 +43,7 @@ import { RequerimentsComponent } from './pages/requeriments/requeriments.compone
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
-    BaseUrl
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })

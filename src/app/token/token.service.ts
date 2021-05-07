@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { DEFAULT_INTERRUPTSOURCES, Idle } from '@ng-idle/core';
 import { BehaviorSubject } from 'rxjs';
-import { BaseUrl } from '../base-url';
+import { environment } from 'src/environments/environment';
 
 class token {
   iss: string;
@@ -12,14 +12,15 @@ class token {
 })
 export class TokenService {
 
+  APIEndPoint = environment.APIEndPoint
+
   private expire = new BehaviorSubject<any>(0);
   expired = this.expire.asObservable();
   private iss = {
-    login: `${this.baseUrl.url}/NEUgbYOtO8DvjfEmfXHu`
+    secret: `secretRequeriment`
   }
 
   constructor(
-    private baseUrl: BaseUrl,
     private idle: Idle
   ) { }
 
