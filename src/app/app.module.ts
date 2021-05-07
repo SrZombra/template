@@ -20,6 +20,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
 import { HomeComponent } from './pages/home/home.component';
 import { RequerimentsComponent } from './pages/requeriments/requeriments.component';
+import { RequerimentsFormComponent } from './pages/requeriments-form/requeriments-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RequerimentsComponent } from './pages/requeriments/requeriments.compone
     SidenavComponent,
     LoginComponent,
     HomeComponent,
-    RequerimentsComponent
+    RequerimentsComponent,
+    RequerimentsFormComponent
   ],
   imports: [
     BrowserAnimationsModule,

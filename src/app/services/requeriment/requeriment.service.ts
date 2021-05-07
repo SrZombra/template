@@ -19,4 +19,8 @@ export class RequerimentService {
     return this.httpClient.get<Requeriment[]>(`${this.APIEndPoint}/requeriment`)
   }
 
+  createRequeriment(data: Requeriment): Observable<Requeriment>{
+    return this.httpClient.post<Requeriment>(`${ this.APIEndPoint }/requeriment`, data)
+  }
+
 }

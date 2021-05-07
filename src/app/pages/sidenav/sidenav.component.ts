@@ -27,7 +27,7 @@ export class SidenavComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if(changes.opened && this.drawer){
+    if(changes.opened && this.drawer && this.loggedIn){
       this.drawer.toggle();
     }
   }

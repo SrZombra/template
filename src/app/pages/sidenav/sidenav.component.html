@@ -1,7 +1,13 @@
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side" [opened]="loggedIn">
-      <p>Auto-resizing sidenav</p>
-      <button (click)="logout()">Logout</button>
+      <mat-selection-list #shoes [multiple]="false">
+        <mat-list-option [routerLink]="['/requeriments']">
+          Requerimientos
+        </mat-list-option>
+        <mat-list-option [routerLink]="['/requeriment-form']">
+          Registrar requerimiento
+        </mat-list-option>
+      </mat-selection-list>
     </mat-drawer>
     <div class="example-sidenav-content">
       <router-outlet></router-outlet>

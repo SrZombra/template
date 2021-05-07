@@ -6,6 +6,17 @@ import Swal from 'sweetalert2';
 })
 export class SwalService {
 
+  success(): void {
+    Swal.fire({
+      title: 'Exito!',
+      icon: 'success',
+      allowOutsideClick: false,
+      heightAuto: false,
+      showConfirmButton: false,
+      timer: 2000,
+    })
+  }
+
   loading(): void{
     Swal.fire({
       allowOutsideClick: false,

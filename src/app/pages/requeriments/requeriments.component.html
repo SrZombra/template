@@ -13,7 +13,7 @@
 
       <ng-container matColumnDef="date">
         <th mat-header-cell *matHeaderCellDef> Fecha creación </th>
-        <td mat-cell *matCellDef="let element"> {{element.created_at.fecha | date}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.created_at.fecha | date : 'medium'}} </td>
       </ng-container>
 
       <ng-container matColumnDef="name">

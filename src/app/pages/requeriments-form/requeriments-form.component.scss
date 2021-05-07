@@ -1,0 +1,105 @@
+$movil-width: 768px;
+$desktop-width: 1024px;
+$primary-color: #074F70;
+$second-color: #B2B5B7;
+
+@media screen and (max-width: $movil-width){
+  .container{
+    // height: 100%;
+    border: 5px solid $primary-color;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .container{
+    img{
+      margin: auto;
+      display: block;
+      width: 50%;
+      border-radius: 10px;
+    }
+  }
+  
+  .title{
+    text-align: center;
+    color: white;
+    p{
+      font-size: 30px;
+      small{
+        font-size: 15px;
+      }
+    }
+  }
+  
+  .specific{
+    color: $primary-color;
+    font-size: 20px;
+  }
+  
+  .img-title{
+    padding: 5px;
+    background-color: $primary-color;
+    border-radius: 10px;
+  }
+  
+  .with-full{
+    width: 100%;
+  }
+  
+  form{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $desktop-width){
+  .container{
+    margin: 80px 200px 0 200px;
+    // height: 100%;
+    border: 5px solid $primary-color;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .container{
+    img{
+      margin: auto;
+      display: block;
+      width: 30%;
+      border-radius: 10px;
+    }
+  }
+  
+  .title{
+    text-align: center;
+    color: white;
+    p{
+      font-size: 30px;
+      small{
+        font-size: 15px;
+      }
+    }
+  }
+  
+  .specific{
+    color: $primary-color;
+    font-size: 20px;
+  }
+  
+  .img-title{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    background-color: $primary-color;
+    border-radius: 10px;
+  }
+  
+  .with-full{
+    width: 49%;
+  }
+  
+  form{
+    text-align: center;
+  }
+}
