@@ -11,7 +11,7 @@ import { SwalService } from 'src/app/services/swal/swal.service';
 export class RequerimentsComponent implements OnInit {
 
   data: Requeriment[]
-  displayedColumns: string[] = ['date', 'name', 'email', 'address', 'typeRequeriment', 'product', 'description', 'canal'];
+  displayedColumns: string[] = ['date', 'name', 'email', 'phone', 'address', 'typeRequeriment', 'product', 'description', 'canal', 'user'];
 
   constructor(
     private swalService: SwalService,
